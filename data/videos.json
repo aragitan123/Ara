@@ -1,0 +1,6 @@
+{
+  "note": "영상 목록입니다. items에 인스타그램 릴스/게시물 주소나 유튜브 주소를 넣으면 홈페이지 '학년별' 화면에 바로 재생됩니다. 예: {\"url\": \"https://www.instagram.com/reel/ABC123/\", \"title\": \"12월 특강 소개\", \"caption\": \"겨울방학 특강을 소개합니다\"}",
+  "instagram": "https://www.instagram.com/aragitan123/",
+  "updated": "2026-11-16",
+  "items": []
+}
