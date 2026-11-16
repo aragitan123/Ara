@@ -3,3 +3,7 @@ fonts/*.otf
 fonts/*.ttf
 # 작업용 임시 폴더
 .tmp/
+
+# 파이썬 캐시
+tools/__pycache__/
+__pycache__/
