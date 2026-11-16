@@ -200,7 +200,15 @@ def book1():
         body.append(Paragraph(r, S("q%d" % id(r), 15, 34, "KR", INK)))
     p.append(D.box(body, bg=colors.white, border=YELLOW, pad=14))
     p.append(g(12))
-    p.append(D.problem_line("9", "내가 만든 수수께끼를 하나 써 보세요.", color=colors.HexColor("#D9A93F")))
+    p.append(D.problem_line("9", "이 수를 두 가지로 읽어 보세요.", color=colors.HexColor("#D9A93F")))
+    p.append(g(4))
+    p.append(D.BigGrid(
+        3, 5, cell_h=54,
+        values={(0, 0): "수", (0, 1): "13", (0, 2): "24", (0, 3): "31", (0, 4): "40",
+                (1, 0): "한자어", (2, 0): "고유어"},
+        fills={(1, 0): CREAM_2, (2, 0): CREAM_2, (0, 0): CREAM_2}, font=18))
+    p.append(g(12))
+    p.append(D.problem_line("10", "내가 만든 수수께끼를 하나 써 보세요.", color=colors.HexColor("#D9A93F")))
     p.append(g(4))
     p.append(K.DottedLines(2, gap=32, dot=(2.5, 4.5)))
     p.append(g(10))
@@ -220,7 +228,9 @@ def book1():
         ("6. 계산", "13+5=18 · 12+7=19 · 15-7=8 · 18-9=9"),
         ("7. 세로셈", "14+5=19 · 17-8=9"),
         ("8. 수수께끼", "21(스물하나) · 29(스물아홉) · 15(십오/열다섯)"),
-        ("9. 내가 만든 수수께끼", "아이가 만든 수수께끼를 함께 읽어 주세요. 답이 하나로 정해지면 더 좋아요."),
+        ("9·10. 두 가지로 읽기 / 내 수수께끼",
+         "13 십삼·열셋 · 24 이십사·스물넷 · 31 삼십일·서른하나 · 40 사십·마흔<br/>"
+         "아이가 만든 수수께끼는 함께 읽어 주세요. 답이 하나로 정해지면 더 좋아요."),
     ]))
     return D.build(os.path.join(OUT, "01_초1_덧뺄셈_50이하_두가지읽기.pdf"), meta, pages)
 
