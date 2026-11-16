@@ -191,9 +191,9 @@ def book1():
     p.append(D.problem_line("8", "내가 누구일까요? □ 안에 수를 써 보세요.", color=colors.HexColor("#D9A93F")))
     p.append(g(6))
     rows = [
-        "· 나는 <b>스물보다 1 큰 수</b>예요. 나는 (        )",
-        "· 나는 <b>서른보다 1 작은 수</b>예요. 나는 (        )",
-        "· 나는 <b>열다섯</b>이라고도, <b>십오</b>라고도 불러요. 나는 (        )",
+        "· 나는 <b>스물보다 1 큰 수</b>예요. 나는 ____",
+        "· 나는 <b>서른보다 1 작은 수</b>예요. 나는 ____",
+        "· 나는 <b>열다섯</b>이라고도, <b>십오</b>라고도 불러요. 나는 ____",
     ]
     body = []
     for r in rows:
@@ -281,7 +281,7 @@ def book2():
     p.append(pic_row([("bend", "꺾인 선", MINT), ("straight", "쭉 뻗은 선", CORAL),
                       ("curved", "휘어진 선", SKY), ("bumpy", "울퉁불퉁", PURPLE)], height=104))
     p.append(g(8))
-    p.append(Paragraph("① (     )   ② (     )   ③ (     )   ④ (     )",
+    p.append(Paragraph("① ____   ② ____   ③ ____   ④ ____",
                        S("ans2", 17, 26, "KR", INK, 1)))
     p.append(g(12))
     p.append(D.problem_line("3", "평평한 것과 울퉁불퉁한 것을 이어 보세요.", color=MINT))
@@ -302,9 +302,9 @@ def book2():
     p.append(g(12))
     p.append(D.problem_line("5", "□ 안에 알맞은 낱말을 써 보세요.", color=SKY))
     p.append(g(4))
-    qs = ["· 운동장은 넓고 (            ) 땅이에요.",
-          "· 자로 그은 선은 (            )이에요.",
-          "· 산은 (            ) 모양이에요."]
+    qs = ["· 운동장은 넓고 ______ 땅이에요.",
+          "· 자로 그은 선은 ______이에요.",
+          "· 산은 ______ 모양이에요."]
     body = [Paragraph(q, S("r%d" % id(q), 15, 34, "KR", INK)) for q in qs]
     p.append(D.box(body, bg=colors.white, border=SKY, pad=14))
     p.append(g(10))
@@ -456,8 +456,8 @@ def book3():
     p.append(D.problem_line("5", "그림을 보고 알맞은 한자를 써 보세요.",
                             color=colors.HexColor("#D9A93F")))
     p.append(g(6))
-    p.append(D.PictoBigRow([("sun", "해 (   )", CORAL), ("moon", "달 (   )", CORAL),
-                            ("tree", "나무 (   )", PURPLE), ("person", "사람 (   )", SKY)],
+    p.append(D.PictoBigRow([("sun", "해 ____", CORAL), ("moon", "달 ____", CORAL),
+                            ("tree", "나무 ____", PURPLE), ("person", "사람 ____", SKY)],
                            height=98))
     p.append(g(8))
     p.append(Paragraph("보기 : 日 · 月 · 山 · 川 · 木 · 火 · 水 · 人",
